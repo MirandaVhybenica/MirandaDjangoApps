@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Fresh Fruits & Vegetables</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        header {
+            background-color: #4caf50;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            padding: 0;
+            background-color: #333;
+        }
+        nav ul li {
+            padding: 14px 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            background-color: #4caf50;
+        }
+        .about-section {
+            padding: 40px;
+            background-color: #fff;
+            margin: 20px;
+            border-radius: 10px;
+        }
+        .about-section h2 {
+            text-align: center;
+        }
+        .about-content {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .about-content p {
+            color: gray;
+            line-height: 1.6;
+            padding: 10px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fresh Fruits & Vegetables</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="{% url 'home' %}">About</a></li>
+            <li><a href="{% url 'shop' %}">Shop</a></li>
+            <li><a href="{% url 'aboutus' %}">About Us</a></li>
+            <li><a href="{% url 'contacts' %}">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="about-section">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <p>At Fresh Fruits & Vegetables, we are committed to providing our customers with the freshest produce available. Based in the Philippines, we source locally-grown fruits and vegetables to support Filipino farmers and ensure the highest quality for our customers.</p>
+            
+            <p>Our mission is to make healthy, fresh produce accessible to everyone, while promoting sustainable farming practices in local communities. We work closely with small farms across the country to bring you organic and pesticide-free options, so you can eat healthier and support local agriculture.</p>
+            
+            <p>Founded in 2022, our vision is to become the leading online platform for fresh fruits and vegetables in the Philippines. Whether you live in the city or in rural areas, we deliver right to your doorstep, ensuring that you have access to farm-fresh produce year-round.</p>
+            
+            <p>Thank you for choosing us to be part of your journey towards a healthier, more sustainable lifestyle!</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Fresh Fruits & Vegetables Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>

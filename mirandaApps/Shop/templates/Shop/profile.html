@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+        .navbar {
+            background-color: #5cb85c;
+            padding: 15px;
+            color: white;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        .profile-info {
+            margin: 20px 0;
+        }
+        .profile-info label {
+            font-weight: bold;
+        }
+        .button {
+            display: block;
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 3px;
+            text-align: center;
+            text-decoration: none;
+            margin: 10px auto;
+            width: 200px;
+        }
+        .button:hover {
+            background-color: #4cae4c;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h1>Customer Profile</h1>
+    </div>
+    <div class="container">
+        <h2>Your Information</h2>
+        <div class="profile-info">
+            <label for="firstName">First Name:</label>
+            <p id="firstName">Vhybenica</p>
+            <label for="lastName">Last Name:</label>
+            <p id="lastName">Miranda</p>
+            <label for="email">Email:</label>
+            <p id="email">vhybenicamiranda@gmail.com</p>
+            <label for="phone">Phone Number:</label>
+            <p id="phone">09217487860</p>
+            <label for="address">Address:</label>
+            <p id="address">Batino Calapan City</p>
+            <label for="dob">Date of Birth:</label>
+            <p id="dob">10/21/2003</p>
+        </div>
+        <a href="{% url 'edit' %}" class="button">Edit Profile</a>
+        <a href="{% url 'lpage' %}" class="button">Back to Dashboard</a>
+    </div>
+    <footer>
+        <p>&copy; 2024 Your Company Name</p>
+    </footer>
+</body>
+</html>
